@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ddb.activitytest">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FirstActivity"
+            android:label="This is First Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity">
+
+            <!-- 配置隐式Ｉｎｔｅｎｔ支持 -->
+            <intent-filter>
+                <action android:name="com.ddb.activitytest.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 如果不在下面注册分类，会导致程序运行崩溃　 -->
+                <category android:name="com.ddb.activitytest.MY_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ThirdActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
