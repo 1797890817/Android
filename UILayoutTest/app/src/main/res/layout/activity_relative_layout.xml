@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--左上角的按钮-->
+    <Button
+        android:id="@+id/buttona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonc"
+        android:layout_toLeftOf="@+id/buttonc"
+        android:text="Button A"/>
+
+    <!--有上角的按钮　-->
+    <Button
+        android:id="@+id/buttonb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonc"
+        android:layout_toRightOf="@+id/buttonc"
+        android:text="Button B"/>
+
+    <!--正中间的按钮　-->
+    <Button
+        android:id="@+id/buttonc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Button C"/>
+
+    <!-- 左下角按钮　-->
+    <Button
+        android:id="@+id/buttond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonc"
+        android:layout_toLeftOf="@+id/buttonc"
+        android:text="Button D"/>
+
+    <!-- 右下角的按钮　-->
+    <Button
+        android:id="@+id/buttone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonc"
+        android:layout_toRightOf="@+id/buttonc"
+        android:text="Button E"/>
+<!--
+    &lt;!&ndash;左上角的按钮&ndash;&gt;
+    <Button
+        android:id="@+id/buttona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Button A"/>
+
+    &lt;!&ndash;有上角的按钮　&ndash;&gt;
+    <Button
+        android:id="@+id/buttonb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Button B"/>
+
+    &lt;!&ndash;正中间的按钮　&ndash;&gt;
+    <Button
+        android:id="@+id/buttonc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Button C"/>
+
+    &lt;!&ndash; 左下角按钮　&ndash;&gt;
+    <Button
+        android:id="@+id/buttond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:text="Button D"/>
+
+    &lt;!&ndash; 右下角的按钮　&ndash;&gt;
+    <Button
+        android:id="@+id/buttone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Button E"/>
+-->
+
+
+
+
+
+</RelativeLayout>
