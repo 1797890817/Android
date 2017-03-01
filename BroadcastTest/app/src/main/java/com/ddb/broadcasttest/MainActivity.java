@@ -31,7 +31,10 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent("com.ddb.broadcasttest.MY_BROADCAST");
-                        sendBroadcast(intent);
+                        //sendBroadcast(intent);
+
+                        //发送有序广播
+                        sendOrderedBroadcast(intent,null);
                     }
                 }
         );

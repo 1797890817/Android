@@ -10,5 +10,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         Toast.makeText(context,"received in MyBroadcastReceiver",Toast.LENGTH_SHORT).show();
+        //截断有序广播，不在继续向下传递
+        abortBroadcast();
     }
 }
