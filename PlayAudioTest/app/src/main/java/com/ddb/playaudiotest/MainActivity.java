@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initMediaPlayer() {
         try {
-            //File file = new File(Environment.getExternalStorageDirectory(), "music.mp3");
-            File file = new File("/storage/2955-1BEF/", "music.mp3");   //HMi Note3 不行！播放失败！
+            File file = new File(Environment.getExternalStorageDirectory(), "music.wma");
+            //File file = new File("/storage/2955-1BEF/", "music.mp3");   //HMi Note3 不行！播放失败！
             mediaPlayer.setDataSource(file.getPath());
             mediaPlayer.prepare();
         } catch (IOException e) {
@@ -71,16 +71,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()) {
             case R.id.play:
                 if (!mediaPlayer.isPlaying()) {
+                    Toast.makeText(this,"Now Playing!",Toast.LENGTH_SHORT).show();
                     mediaPlayer.start();    //开始播放
                 }
                 break;
             case R.id.pause:
                 if (mediaPlayer.isPlaying()) {
+                    Toast.makeText(this,"Now Pause!",Toast.LENGTH_SHORT).show();
                     mediaPlayer.pause();    //暂停播放
                 }
                 break;
             case R.id.stop:
                 if (mediaPlayer.isPlaying()) {
+                    Toast.makeText(this,"Now stop!",Toast.LENGTH_SHORT).show();
                     mediaPlayer.reset();
                     initMediaPlayer();
                 }
